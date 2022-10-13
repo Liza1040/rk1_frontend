@@ -4,7 +4,6 @@ const popUpBackground = document.getElementById('popUp-background');
 const openPopUp = document.getElementById('openPopUp');
 const popUp = document.getElementById('popUp');
 
-console.log(openPopUp);
 openPopUp.addEventListener('click', (event) => {
     event.preventDefault();
     popUp.classList.add('active');

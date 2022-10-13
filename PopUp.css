@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.popUp-background {
+    display: grid;
+    background-color: rgb(231, 223, 223);
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    align-content: center;
+}
+
+.popUp {
+    position: absolute;
+    display: grid;
+    width: 50vw;
+    height: 40vh;
+    background-color: white;
+    grid-template-rows: 1fr 1fr;
+    align-content: center;
+    text-align: center;
+    border-radius: 20px;
+    left: 25%;
+    top: 25%;
+    display: none;
+}
+
+.popUp.active {
+    display: grid;
+}
+
+.link {
+    text-decoration: none;
+    color: rgb(129, 29, 29);
+}
+
+.link:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+.popUp__text {
+    align-self: center;
+}
+
+.popUp__button {
+    width: 50%;
+    height: 30%;
+    justify-self: center;
+    background-color: rgb(189, 75, 75);
+}
+
+.text {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}

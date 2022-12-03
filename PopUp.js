@@ -5,25 +5,33 @@ const openPopUp = document.getElementById('openPopUp');
 const popUp = document.getElementById('popUp');
 
 // Вариант 1
-openPopUp.addEventListener('click', (event) => {
-    event.preventDefault();
-    popUp.classList.add('active');
-})
-
 document.addEventListener('click', (event) => {
-    if (event.target === popUpBackground) {
+    if (event.target === openPopUp) {
+        event.preventDefault();
+        popUp.classList.add('active');
+    }
+    else if (event.target === popUpBackground) {
         popUp.classList.remove('active');
     }
 })
 
 // Вариант 2
-openPopUp.onclick = (event) => {
-    event.preventDefault();
-    popUp.classList.add('active');
-}
-
 document.onclick = (event) => {
-    if (event.target === popUpBackground) {
+    if (event.target === openPopUp) {
+        event.preventDefault();
+        popUp.classList.add('active');
+    }
+    else if (event.target === popUpBackground) {
         popUp.classList.remove('active');
     }
 }
+
+// Вариант 3
+document.addEventListener('mousedown', (event) => {
+    if (event.target === openPopUp) {
+        popUp.classList.add('active');
+    }
+    else if (event.target === popUpBackground) {
+        popUp.classList.remove('active');
+    }
+})

@@ -52,6 +52,11 @@
     background-color: rgb(189, 75, 75);
 }
 
+.popUp__button:hover {
+    cursor: pointer;
+    background-color: rgb(184, 59, 59);
+}
+
 .text {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
     font-style: normal;
